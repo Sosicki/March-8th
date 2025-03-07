@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F8C8DC;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#noButton {
+    position: absolute;
+    margin-left: 180px;
+    transition: 0.9s;
+}
+.text {
+    background: white;
+    width: 900px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.text_mart{
+    background: white;
+    width: 900px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#yesButton {
+    position: absolute;
+    margin-right: 180px;
+    right: 850px;
+}
+
+.header_text {
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+.buttons {
+    width: 900px;
+    display: flex;
+    gap: 200px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.btn {
+    width: 250px;
+    height: 100px;
+    background-color: #FFB6C1;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    margin: 40px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+
+}
+
+.btn:hover {
+    background-color: #FAF9F6;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+}
+
+img {
+    width: 400px;
+}
+
+/* Медиазапросы для мобильных устройств (ширина до 600px) */
+@media (max-width: 600px) {
+    .header_text {
+        font-size: 30px; /* Уменьшаем размер текста */
+    }
+
+    .text, .text_mart {
+        width: 95%; /* Увеличиваем ширину контейнера */
+        padding: 10px; /* Уменьшаем внутренние отступы */
+    }
+
+    .buttons {
+        flex-direction: column; /* Кнопки в столбик */
+        gap: 10px; /* Уменьшаем расстояние между кнопками */
+    }
+
+    .btn {
+        width: 150px; /* Уменьшаем ширину кнопок */
+        height: 60px; /* Уменьшаем высоту кнопок */
+        font-size: 24px; /* Уменьшаем размер текста */
+    }
+
+    #noButton {
+        margin-left: 0; /* Убираем отступ */
+        position: static; /* Убираем абсолютное позиционирование */
+    }
+
+    #yesButton {
+        margin-right: 0; /* Убираем отступ */
+        position: static; /* Убираем абсолютное позиционирование */
+    }
+
+    .gif_container {
+        margin-left: 0; /* Убираем отступ */
+    }
+}
